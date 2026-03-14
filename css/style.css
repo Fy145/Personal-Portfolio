@@ -539,6 +539,7 @@ header{
     margin-top:30px;
     height: 200px;
     display: flex;
+    overflow: auto;
 }
 
 .section-projects .section-content .project .list-languages{
@@ -572,6 +573,7 @@ header{
 
 .section-projects .section-content .project .list-languages .item-language .image-language{
     cursor: pointer;
+    display: inline;
 }
 
 .section-projects .section-content .project .list-languages .item-language .taux{
