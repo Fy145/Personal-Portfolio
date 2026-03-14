@@ -193,7 +193,7 @@
          <section class="section-projects" id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="section-content">
-                <div class="project">
+                <div class="project1" id="project1">
                     <h3 class="title-project">Gestion of the command</h3>
                     <i class="description">The web application admin part, where an admin can manage the company's commande thanks to the more options inside this application.</i>
                     <div class="use-language">
@@ -242,19 +242,16 @@
                         </ul>
                     </div>
                     
-                    <div class="demo swiper" id="sourceDemo">
+                    <div class="demo " id="sourceDemo">
                         <div class="content-demo">
-                            <div class="btn-prev">
-                                
-                            </div>
                             <div class="slider-wrapper">
-                                <div class="btn-prev">
+                                <div class="btn-prev" id="prev">
                                     <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M659.2 917.333333l66.133333-66.133333L386.133333 512 725.333333 172.8 659.2 106.666667 256 512z" fill="#2196F3" /></svg>               
                                 </div>
 
                                 <div class="list-demo-image">
                                     <ul class="list-image">
-                                        <li class="item-image">
+                                        <li class="item-image active">
                                             <img src="images/Demo/command-project/Screenshot 2026-03-06 140901.png" alt="" class="project-image">
                                             <p class="title">Recherche d'un client</p>
                                         </li>
@@ -289,7 +286,7 @@
                                     </ul>
                                 </div>
                                 
-                                <div class="btn-next">
+                                <div class="btn-next" id="next">
                                     <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M364.8 106.666667L298.666667 172.8 637.866667 512 298.666667 851.2l66.133333 66.133333L768 512z" fill="#2196F3" /></svg>
                                 </div>
                             </div>
@@ -307,7 +304,9 @@
                         <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                 </div>
-                <div class="project">
+
+
+                <div class="project" id="project">
                     <h3 class="title-project">Professional Portfolio</h3>
                     <i class="description">Personal portfolio dynamic, modern and professional where belongs more details about me and technologie.</i>
                     <div class="use-language" id="use-language">
@@ -356,13 +355,13 @@
                         </ul>
                     </div>
 
-                    <div class="demo">
+                    <div class="demo" id="sourceDemo-portfolio">
                         <div class="slider-wrapper">
-                            <div class="btn-prev">
-                                <img src="images/Demo/previous-svgrepo-com.svg" alt="" class="image-prev">
+                            <div class="btn-prev" id="prev-projectPort">
+                                <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M659.2 917.333333l66.133333-66.133333L386.133333 512 725.333333 172.8 659.2 106.666667 256 512z" fill="#2196F3" /></svg>               
                             </div>
-                            <ul class="list-image swiper-wrapper">
-                                <li class="item-image">
+                            <ul class="list-image">
+                                <li class="item-image active">
                                     <img src="images/Demo/portfolio-project/Screenshot from 2026-03-07 15-32-16.png" alt="" class="project-image">
                                     <p class="title">Recherche d'un client</p>
                                 </li>
@@ -388,13 +387,13 @@
                                     <img src="images/Demo/portfolio-project/Screenshot from 2026-03-07 15-44-19.png" alt="" class="project-image">
                                 </li>
                             </ul>
-                            <div class="btn-next">
-                                <img src="images/Demo/next-svgrepo-com.svg" alt="" class="image-next">
+                            <div class="btn-next" id="next-proctPort">
+                                <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M364.8 106.666667L298.666667 172.8 637.866667 512 298.666667 851.2l66.133333 66.133333L768 512z" fill="#2196F3" /></svg>
                             </div>
                         </div>
                     </div>
                     <div class="btn-project">
-                        <a class="demo-btn">Demo</a>
+                        <a class="demo-btn" onclick="openProject()" id="btn-demo-project">Demo</a>
                         <a class="contact-me" href="#contacts">Contact-me</a>
                     </div>
                     <div class="project-social-network-list">

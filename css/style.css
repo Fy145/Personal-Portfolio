@@ -512,6 +512,18 @@ header{
     gap: 60px;
 }
 
+.section-projects .section-content .project1{
+    display: inline-grid;
+    gap: 10px;
+    padding:30px 50px;
+    width: 100%;
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 1px 1px 6px 1px var(--secondary-color);
+}
+
 .section-projects .section-content .project{
     display: inline-grid;
     gap: 10px;
@@ -524,32 +536,31 @@ header{
     box-shadow: 1px 1px 6px 1px var(--secondary-color);
 }
 
-.section-projects .section-content .project .title-project{
+.section-projects .section-content .title-project{
     text-align: center;
     margin-bottom: 20px;
     color: var(--light-pink-color);
 }
 
-.section-projects .section-content .project .description{
+.section-projects .section-content .description{
     margin: 14px 0;
     font-size: var(--font-size-m);
 }
 
-.section-projects .section-content .project .demo .slider-wrapper{
+.section-projects .section-content .demo .slider-wrapper{
     margin-top:30px;
-    height: 200px;
     display: flex;
     overflow: auto;
 }
 
-.section-projects .section-content .project .list-languages{
+.section-projects .section-content .list-languages{
     float: left;
     gap: 20px;
     padding: 20px 0;
     width: 100%;
 }
 
-.section-projects .section-content .project .list-languages p{
+.section-projects .section-content .list-languages p{
     margin-bottom: 10px;
 }
 
@@ -563,7 +574,7 @@ header{
     background: var(--secondary-color);
     border-radius: var(--border-radius-m);
 }
-.section-projects .section-content .project .list-languages .item-language{
+.section-projects .section-content .list-languages .item-language{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -571,12 +582,11 @@ header{
     gap: 20px;
 }
 
-.section-projects .section-content .project .list-languages .item-language .image-language{
+.section-projects .section-content .list-languages .item-language .image-language{
     cursor: pointer;
-    display: inline;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux{
+.section-projects .section-content .list-languages .item-language .taux{
     width: 80%;
     height: 10px;
     background-color: transparent;
@@ -586,49 +596,60 @@ header{
     gap: 1px;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #html{
+.item-image{
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.item-image.active{
+    display: block;
+}
+
+.section-projects .section-content .list-languages .item-language .taux #html{
     width: 40%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #css{
+.section-projects .section-content .list-languages .item-language .taux #css{
     width: 30%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #css-cv{
+.section-projects .section-content .list-languages .item-language .taux #css-cv{
     width: 40%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #js{
+.section-projects .section-content .list-languages .item-language .taux #js{
     width: 15%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #js-cv{
+.section-projects .section-content .list-languages .item-language .taux #js-cv{
     width: 25%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #php{
+.section-projects .section-content .list-languages .item-language .taux #php{
     width: 23%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #ajax-cv{
+.section-projects .section-content .list-languages .item-language .taux #ajax-cv{
     width: 18%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #mysql{
+.section-projects .section-content .list-languages .item-language .taux #mysql{
     width: 20%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #mysql-cv{
+.section-projects .section-content .list-languages .item-language .taux #mysql-cv{
     width: 17%;
 }
 
-.section-projects .section-content .project .list-languages .item-language .image-language{
+.section-projects .section-content .list-languages .item-language .image-language{
     max-width: 30px;
 }
 
-.section-projects .section-content .project .list-languages .item-language .taux #html-cv{
+.section-projects .section-content .list-languages .item-language .taux #html-cv{
     width: 60%;
 }
+
 
 .section-projects .section-content .btn-project{
     display: flex;
@@ -689,12 +710,19 @@ header{
 
 .section-projects .section-content .demo .slider-wrapper .list-image .item-image .title{
     text-align: center;
-    margin: 10px;
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-s);
     font-style: italic;
+    border: 1px solid lightblue;
+    width: 100%;
+    padding: 10px;
 }
 
-.demo{
+.project1 .demo{
+    display: none;
+}
+
+.project .demo{
     display: none;
 }
 
@@ -705,6 +733,15 @@ header{
     height: 200px;
 }
 
+.btn-prev{
+    padding-top: 20%;
+    cursor: pointer;
+}
+
+.btn-next{
+    padding-top: 20%;
+    cursor: pointer;
+}
 
 /* Responsive media query code for max-width 1024px */
 @media  screen and (max-width: 1024px) {
@@ -973,8 +1010,6 @@ i{
     flex-direction: column;
     gap: 80px;
 }
-
-
 }
 
 /* Responsive media query code for max-width 480px */
