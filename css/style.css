@@ -537,6 +537,7 @@ header{
 
 .section-projects .section-content .project .demo .slider-wrapper{
     margin-top:30px;
+    height: 200px;
     display: flex;
 }
 
