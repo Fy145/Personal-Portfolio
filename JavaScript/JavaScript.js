@@ -21,7 +21,7 @@ function openProject(){
     // btnDemoProject.style.cursor = "deseable";
 }
 
-const listImageDemo = document.querySelectorAll('.item-image');
+const listImageDemo = document.querySelectorAll('.demo-imageComm');
 let currentIndex = 0;
 
 function showItemImage(index){
@@ -37,34 +37,28 @@ document.getElementById('next').addEventListener('click', () => {
 
 document.getElementById('prev').addEventListener('click', () => {
     currentIndex = (currentIndex-1+listImageDemo.length) % listImageDemo.length;
-});
-
-showItemImage(currentIndex);
-
-document.getElementById('next-projectPort').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % listImageDemo.length;
     showItemImage(currentIndex);
 });
 
-document.getElementById('prev-projectPort').addEventListener('click', () => {
-    currentIndex = (currentIndex-1+listImageDemo.length) % listImageDemo.length;
+showItemImage(currentIndex);
+
+const demoImagePort = document.querySelectorAll('.demo-imagePort');
+let currInd = 0;
+
+function showItem(indexProject){
+    demoImagePort.forEach((t, i)=>{
+        t.classList.toggle('active', i === indexProject);
+    });
+}
+document.getElementById('next-projectPort').addEventListener('click', () => {
+    currInd = (currInd + 1) % demoImagePort.length;
+    showItem(currInd);
 });
 
-showItemImage(currentIndex);
-// if (startDemo.onclick()){
-//     sourceDemo.classList.display = "block";
-// }
-    // pour navigation
-// const swiper = new swiper('.slider-wrapper', {
-//     loop: true,
+document.getElementById('prev-projectPort').addEventListener('click', () => {
+    currInd = (currInd-1+demoImagePort.length) % demoImagePort.length;
+    showItem(currInd);
+});
 
-//     pagination:{
-//         el: 'swiper-pagination',
-//     },
-
-//     // navigation
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         preEl: '.swiper-button-prev',
-//     },
-// });
+console.log(demoImagePort.length);
+showItem(currInd);
