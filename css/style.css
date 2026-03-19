@@ -11,6 +11,12 @@ html{
     scroll-behavior: smooth;
 }
 
+.social-link{
+    border: 1px solid var(--white-color);
+    padding: 5px;
+    border-radius: var(--border-radius-circle);
+}
+
 :root{
     /* Colors */
     --white-color:#fff;
@@ -213,6 +219,11 @@ header{
         font-size: var(--font-size-l);
     }
 
+.hero-social-network-list .social-link:hover{
+    background-color: var(--white-color);
+    color: #252525;
+}
+
 /* About section styling */
 .about-section{
     padding:120px 40px;
@@ -272,13 +283,15 @@ header{
 }
 
 .social-network-list .social-link{
+    border: 1px solid var(--dark-color);
     color: var(--primary-color);
     font-size: var(--font-size-l);
     transition: 0.3s ease;
 }
 
 .social-network-list .social-link:hover{
-    color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--dark-color);
 }
 
 
@@ -705,7 +718,8 @@ header{
 }
 
 .project-social-network-list .social-link:hover{
-    color:var(--secondary-color);
+    color:var(--dark-color);
+    background: var(--white-color);
 }
 
 .section-projects .section-content .demo .slider-wrapper .list-image .item-image .title{
