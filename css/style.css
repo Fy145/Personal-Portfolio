@@ -484,10 +484,14 @@ header{
     border-radius: var(--border-radius-m);
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-medium);
+    border:1px solid var(--primary-color);
+    transition: 0.3s ease;
 }
 
 .contacts-section .contact-content .contact-adresse .submit-btn:hover{
     background-color: transparent;
+    margin-top: 20px;
+    padding: 10px 26px;
     color: var(--primary-color);
     border:1px solid var(--primary-color);
 }
