@@ -20,8 +20,8 @@ html{
 
 :root{
     /* Colors */
-    --white-color:#fff;
-    --dark-color:#252525;
+    --white-color:#E6EDF3;
+    --dark-color:#0D1117;
     --primary-color:#3b141c;
     --secondary-color:#f3961c;
     --light-pink-color:#faf4f5;
@@ -102,9 +102,10 @@ header{
 }
 
 .navbar .nav-logo .logo-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:var(--white-color);
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
 }
 
 .navbar :where(#menu-close-button, #menu-open-button){
@@ -116,7 +117,18 @@ header{
     gap:5px;
 }
 
-.navbar .navbar-link{
+.nav-menu a .active{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.nav-menu a:hover,
+.nav-menu a.active{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.navbar li a{
     padding:14px 18px;
     color: var(--white-color);
     font-size: var(--font-size-m);
@@ -124,7 +136,7 @@ header{
     transition: 0.3s ease;
 }
 
-.navbar .navbar-link:hover{
+.navbar li a:hover{
     color:var(--primary-color);
     background-color: var(--secondary-color);
 }
@@ -517,13 +529,19 @@ header{
 
 .footer-section .section-content{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding:0 20px;
+    max-width: var(--size-max-width);
+    margin: 0 auto;
 }
 
-.footer-section :where(.copyright, .social-link, .privacy){
+.footer-section :where(.copyright, .privacy){
     color: var(--white-color);
-    font-size: var(--font-size-l);
+}
+
+.footer-section :where(.social-link){
+    color: var(--white-color);
+    font-size: var(--font-size-m);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -542,7 +560,7 @@ header{
     color: var(--white-color);
 }
 
-.footer-section :where(.privacy):hover{
+.footer-section .privacy:hover{
     color: var(--secondary-color);
     transition: 0.2s ease;
 }
@@ -937,7 +955,7 @@ header{
         left:0;
     }
 
-    .navbar .nav-menu .navbar-link{
+    .navbar .nav-menu li a{
         color: var(--white-color);
         display: block;
         margin-top: 17px;
