@@ -142,6 +142,8 @@ header{
     color: var(--white-color);
     justify-content: space-between;
     max-width: var(--size-max-width);
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .hero .name {
@@ -232,9 +234,13 @@ header{
 
 .about-section .about-section-content{
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    min-height: 100vh;
+    max-width: var(--size-max-width);
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .about-section .about-profile-image .about-image{
@@ -413,9 +419,11 @@ header{
 
 .contacts-section .contact-content{
     display: flex;
-    gap: 50px;;
     justify-content: space-between;
     align-items: flex-start;
+    padding:0 20px;
+    max-width: var(--size-max-width);
+    margin: 0 auto;
 }
 
 .contacts-section .section-title{
@@ -503,15 +511,21 @@ header{
 .footer-section .section-content .social-link{
     gap: 30px;
     font-size: var(--font-size-l);
+    transition: 0.3s ease;
 }
 
 .footer-section .privacy-policy .separator{
     color: var(--white-color);
 }
 
-.footer-section :where(.privacy, .social-link):hover{
+.footer-section :where(.privacy):hover{
     color: var(--secondary-color);
     transition: 0.2s ease;
+}
+
+.footer-section :where(.social-link):hover{
+    color: var(--dark-color);
+    background: var(--white-color);
 }
 
 /*  Section projects */
