@@ -182,6 +182,7 @@ header{
     background: var(--secondary-color);
     font-weight: var(--font-weight-medium);
     border: 2px solid transparent;
+    transition: 0.5s ease;
 }
 
 .hero .hero-content .hero-content-details .button:hover,
@@ -571,7 +572,12 @@ header{
     color: var(--white-color);
     border-radius: var(--border-radius-m);
     border: 1px solid var(--secondary-color);
+    transition: 0.5s ease;
+}
+
+.section-projects .section-content .project1:hover{
     box-shadow: 1px 1px 6px 1px var(--secondary-color);
+    transform: scale(1.3rem);    
 }
 
 .section-projects .section-content .project{
@@ -583,7 +589,12 @@ header{
     color: var(--white-color);
     border-radius: var(--border-radius-m);
     border: 1px solid var(--secondary-color);
+    transition: .5s ease;
+}
+
+.section-projects .section-content .project:hover{
     box-shadow: 1px 1px 6px 1px var(--secondary-color);
+    transform: scale(1.3rem);    
 }
 
 .section-projects .section-content .title-project{
@@ -751,6 +762,13 @@ header{
 
 .project-social-network-list .social-link{
     color: var(--white-color);
+        font-size: var(--font-size-l);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        transition: 0.4s ease;
     transition: 0.3s ease;
 }
 
