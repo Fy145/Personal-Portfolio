@@ -968,6 +968,12 @@ header{
         justify-content: center;
     }
 
+    .hero .hero-content .hero-content-details{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
     .hero .hero-content .hero-content-image{
         max-height: 300px;
     }
@@ -1097,6 +1103,13 @@ i{
     flex-direction: column;
     gap: 80px;
 }
+
+.footer-section .section-content{
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 /* Responsive media query code for max-width 480px */
@@ -1169,7 +1182,7 @@ i{
 }
 
 .footer-section .section-content{
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
 }
 }
