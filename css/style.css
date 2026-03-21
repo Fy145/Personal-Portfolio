@@ -334,7 +334,6 @@ header{
 /* Section skills styling */
 
 .section-skills {
-    /* padding: 10px 0 40px; */
     color: var(--white-color);
     background: var(--dark-color);
 }
@@ -930,66 +929,14 @@ header{
     max-width: var(--size-max-width);
 }
 
-    .about-section-language .menu-skill{
-        gap: 30px;
+     .section-skills .skills-content{
+        flex-direction: column-reverse;
     }
 
-    .about-section-language .menu-skill .skill-item{
-        width: calc(100%/3-30px);
+    .section-skills .skills-content h4{
+        margin-top: 30px;
     }
-
-    .about-section-language{
-    padding: 0;
-}
-
-    .about-section-language .level{
-    width: 120px;
-    height: 6px;
-    border: 1px solid var(--white-color);
-    border-radius: var(--border-radius-m);
-    background-color:transparent;
-}
-
-.about-section-language .level .herite-level-html{
-    width: 102px;
-    height: 6px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-css{
-    width: 88px;
-    height: 6px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-js{
-    width: 69px;
-    height: 6px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-react{
-    width: 72px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.herite-level-postgresql{
-    width: 94px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .taux{
-    padding: 5px 0;
-    width: 120px;
-}
-
-.about-section-language .taux h5{
-    text-align: right;
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
-}
+    
 }
 
 /* Responsive media query code for max-width 900px */
@@ -1101,78 +1048,13 @@ header{
         aspect-ratio: 1;
     }
 
-    .about-section-language .menu-skill{
-        gap: 20px;
+    .section-skills .skills-content{
+        flex-direction: column;
     }
 
-    .about-section-language .menu-skill .skill-item{
-        width: calc(100%/2-20px);
+    .section-skills .skills-content h4{
+        margin-top: 30px;
     }
-
-    .about-section-language .menu-skill .skill-item{
-        max-width: 100px;
-    } 
-
-    .about-section-language{
-    padding: 10px 0px;
-}
-
-.section-skills {
-    /* padding: 10px 0 40px; */
-    padding: 75px;
-    color: var(--white-color);
-    background: var(--dark-color);
-}
-
-
-    .about-section-language .level{
-    width: 70px;
-    height: 5px;
-    border: 1px solid var(--white-color);
-    border-radius: var(--border-radius-m);
-    background-color:transparent;
-}
-
-.about-section-language .level .herite-level-html{
-    width: 59px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-css{
-    width: 50px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-js{
-    width: 41px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-react{
-    width: 42px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.herite-level-postgresql{
-    width: 54px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .taux{
-    padding: 5px 0;
-    width: 70px;
-}
-
-.about-section-language .taux h5{
-    text-align: right;
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
-}
 
 .contacts-section .contact-content .contact-adresse .box-message{
     max-width: 100%;
@@ -1204,69 +1086,6 @@ i{
 @media  screen and (max-width: 480px){
 .about-section-language{
     padding: 0;
-}
-
-.section-skills {
-    /* padding: 10px 0 40px; */
-    padding: 70px;
-    color: var(--white-color);
-    background: var(--dark-color);
-}
-
-
-    .about-section-language .level{
-    width: 50px;
-    height: 5px;
-    border: 1px solid var(--white-color);
-    border-radius: var(--border-radius-m);
-    background-color:transparent;
-}
-
-.about-section-language .level .herite-level-html{
-    width: 42px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-css{
-    width: 35px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-js{
-    width: 29px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .level .herite-level-react{
-    width: 30px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.herite-level-postgresql{
-    width: 39px;
-    height: 5px;
-    background: var(--secondary-color);
-}
-
-.about-section-language .taux{
-    padding: 5px 0;
-    width: 50px;
-}
-
-.about-section-language .taux h5{
-    text-align: right;
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
-}
-
-.skills-image{
-    max-width: 100%;
-    min-width: 80%;
-    aspect-ratio: 1;
 }
 
 .footer-section .section-content{
