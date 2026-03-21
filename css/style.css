@@ -335,12 +335,191 @@ header{
 
 .section-skills {
     /* padding: 10px 0 40px; */
-    padding: 100px;
     color: var(--white-color);
     background: var(--dark-color);
 }
+.section-skills .section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-size-l);
+} 
+.section-skills .skills-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    min-height: 90vh;
+    max-width: var(--size-max-width);
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
 
-.about-section-language{
+.technical-bars{
+    width: 33vw;
+    height: 500px;
+}
+
+.section-skills .skills-content img{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-skills .skills-content h4{
+    margin-bottom: 80px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 8px;
+}
+
+.technical-bars .bar .info span{
+    margin-bottom: 20px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress{
+    position: relative;
+    border-radius: var(--border-radius-s);
+    width: 100%;
+    height: 5px;
+    margin-bottom: 30px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .progress span{
+    height: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: var(--border-radius-s);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.technical-bars .bar .progress.html span{
+    width: 80%;
+}
+
+.technical-bars .bar .progress.css span{
+    width: 65%;
+}
+
+.technical-bars .bar .progress.js span{
+    width: 50%;
+}
+
+.technical-bars .bar .progress.react span{
+    width: 40%;
+}
+
+.technical-bars .bar .progress.python span{
+    width: 55%;
+}
+
+.technical-bars .bar .progress.php span{
+    width: 65%;
+}
+
+.technical-bars .bar .progress.mysql span{
+    width: 60%;
+}
+
+.technical-bars .bar .progress.postgresql span{
+    width: 50%;
+}
+
+.progress span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: var(--white-color);
+    font-size: var(--font-size-s);
+    top: -20px;
+    right:-20px;
+    animation :showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress.html span::after{
+    content: '80%';
+}
+
+.technical-bars .bar .progress.css span::after{
+    content: '65%';
+}
+
+.technical-bars .bar .progress.js span::after{
+    content: '50%';
+}
+
+.technical-bars .bar .progress.react span::after{
+    content: '40%';
+}
+
+.technical-bars .bar .progress.python span::after{
+    content: '55%';
+}
+
+.technical-bars .bar .progress.php span::after{
+    content: '65%';
+}
+
+.technical-bars .bar .progress.mysql span::after{
+    content: '60%';
+}
+
+.technical-bars .bar .progress.postgresql span::after{
+    content: '50%';
+}
+
+.progress span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showtext 0.5s, 1.5s linear forwards;
+    opacity: 0;
+
+}
+
+@keyframes showText{
+    100%{
+        margin-bottom: 10px;
+        opacity: 1;
+    }
+}
+
+.bar img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* .about-section-language{
     padding: 20px 200px;
 }
 
@@ -434,7 +613,7 @@ header{
     max-width: 55%;
     min-width: 40%;
     aspect-ratio: 1;;
-}
+} */
 
 /* Contacts section styling */
 .contacts-section{
@@ -675,16 +854,6 @@ header{
     gap: 1px;
 }
 
-.item-image{
-    display: none;
-    padding: 20px;
-    text-align: center;
-}
-
-.item-image.active{
-    display: block;
-}
-
 .section-projects .section-content .list-languages .item-language .taux #html{
     width: 40%;
 }
@@ -728,7 +897,6 @@ header{
 .section-projects .section-content .list-languages .item-language .taux #html-cv{
     width: 60%;
 }
-
 
 .section-projects .section-content .btn-project{
     display: flex;
