@@ -347,7 +347,7 @@ header{
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: var(--size-max-width);
     margin: 0 auto;
     padding-bottom: 80px;
