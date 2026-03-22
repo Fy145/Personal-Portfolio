@@ -1184,30 +1184,47 @@ header{
 
     .section-skills .skills-content h4{
         margin-top: 30px;
-        width: 300px;
+        width: 200px;
     }
 
 .contacts-section .contact-content .contact-adresse .box-message{
-    max-width: 100%;
+    max-width: 250px;
 }
 
 .contacts-section .contact-content .contact-adresse{
-    align-items: center;
     flex-direction: column-reverse;
+    gap: 20px;
+    width: 220px;
 }
 
 i{
     cursor: pointer;
 }
 
+.section-projects .section-content{
+    display: flex;
+    gap: 60px;
+    min-height: 100vh;
+    justify-content: space-between;
+    max-width: var(--size-max-width);
+    padding: 20px;
+    margin: 0 auto;
+}
+
 
 .section-projects .section-content .project{
-    width: 400px;
+    width: 350px;
 }
 
 .section-projects .section-content{
     flex-direction: column;
     gap: 80px;
+}
+
+.contacts-section .contact-content{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: auto;
 }
 
 .footer-section .section-content{
